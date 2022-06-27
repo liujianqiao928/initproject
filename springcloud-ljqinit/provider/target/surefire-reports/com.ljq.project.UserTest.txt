@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.ljq.project.UserTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 12.303 s <<< FAILURE! - in com.ljq.project.UserTest
+test  Time elapsed: 0.236 s  <<< ERROR!
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.ljq.project.mapper.UserMapper.selectById
+	at com.ljq.project.UserTest.test(UserTest.java:14)
+

@@ -1,0 +1,7 @@
+com\ljq\project\config\MybatisPlusConfig.class
+com\ljq\project\model\User.class
+com\ljq\project\service\impl\UserServiceImpl.class
+com\ljq\project\mapper\UserMapper.class
+com\ljq\project\service\UserService.class
+com\ljq\project\ProviderApplication.class
+com\ljq\project\controller\userController.class

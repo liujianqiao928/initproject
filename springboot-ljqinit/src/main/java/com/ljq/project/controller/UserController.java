@@ -2,6 +2,7 @@ package com.ljq.project.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.ljq.project.aop.Log;
 import com.ljq.project.dto.response.ResultResponse;
 import com.ljq.project.enums.TipEnum;
 import com.ljq.project.exception.MyException;
@@ -20,6 +21,7 @@ public class UserController {
     @Autowired
     private UserService userService;
     @GetMapping("/getUser")
+    @Log
     public ResultResponse<String> getUser() {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.select("*");

@@ -1,0 +1,4 @@
+com\ljq\project\controller\UserController.class
+com\ljq\project\feign\UserFeign.class
+com\ljq\project\ConsumerApplication.class
+com\ljq\project\config\FeignLogConfig.class

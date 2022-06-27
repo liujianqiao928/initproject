@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+
+spring:
+#  main:
+#    allow-bean-definition-overriding: true
+  cloud:
+    gateway:
+      routes:
+        - id: consumer
+          uri: lb://consumer
+          predicates:
+            - Path=/**
+    nacos:
+      discovery:
+        server-addr:  127.0.0.1:8848 # 配置nacos 服务端地址
+  application:
+    name: gateway # 服务名称
+
+

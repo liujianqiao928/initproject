@@ -126,10 +126,17 @@
             <artifactId>hutool-all</artifactId>
             <version>5.5.2</version>
         </dependency>
+        <!-- mybatis-plus集成依赖包 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+        <!-- mybatis-plus分页插件 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus</artifactId>
-            <version>3.1.1</version>
+            <version>3.4.0</version>
         </dependency>
 
 
