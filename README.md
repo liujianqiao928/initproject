@@ -18,4 +18,22 @@
 ## duubbo
   未开放
 ## spring-cloud
-  未开放
+  nacos
+  spring cloud alibaba
+  feign
+  gateway
+  
+   web
+  redis
+  mysql
+  mybatis
+  mybatis-plus
+  hutools
+  fastjson
+  es
+  mongodb
+  kafka
+  日志 aop日志
+  swagger 接口测试
+  各个工具类和手动封装异常类
+
