@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+						"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<configuration>
+	<settings>
+		<!--驼峰命名-->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	<!--别名-->
+
+	<!--批量配置别名 针对所有的pojo类,进行别名设置 根据自己的pojo所在的全路径 -->
+	<typeAliases>
+		<package name="com.ljq.project.model" />
+	</typeAliases>
+
+
+</configuration>

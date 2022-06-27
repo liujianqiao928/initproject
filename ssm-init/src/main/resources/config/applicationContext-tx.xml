@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.0.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-4.0.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/task
+   		http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+	<!--设置:spring对事物的管理 -->
+
+	<!--1.设置事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<!--注入数据源 -->
+		<property name="dataSource" ref="dataSource"></property>
+<!---->
+	</bean>
+	<!--2.通知事物管理 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<aop:config>
+		<!--配置切入点
+            切入点表达式 execution(* com.ice.ssm.service..*(..)
+                两个点表示service下面还有子包也可以
+        -->
+		<aop:pointcut id="txPoint" expression="execution(* com.ljq.project.service.*(..))"/>
+		<!--配置切面 事务增强-->
+		<!--        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"></aop:advisor>-->
+	</aop:config>
+
+</beans>
