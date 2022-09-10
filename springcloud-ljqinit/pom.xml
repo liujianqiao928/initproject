@@ -16,6 +16,7 @@
         <module>common</module>
         <module>provider</module>
         <module>consumer</module>
+        <module>provider1</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
