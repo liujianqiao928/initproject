@@ -8,11 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
         <module name="provider1" />
-        <module name="provider" />
+        <module name="provoder" />
         <module name="consumer" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="provider" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -21,6 +24,7 @@
       <module name="gateway" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="provider1" options="-parameters" />
+      <module name="provoder" options="-parameters" />
     </option>
   </component>
 </project>

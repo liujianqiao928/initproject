@@ -1,7 +1,7 @@
-D:\project\springcloud-ljqinit\springcloud-ljqinit\provider\src\main\java\com\ljq\project\controller\userController.java
-D:\project\springcloud-ljqinit\springcloud-ljqinit\provider\src\main\java\com\ljq\project\service\impl\UserServiceImpl.java
-D:\project\springcloud-ljqinit\springcloud-ljqinit\provider\src\main\java\com\ljq\project\config\MybatisPlusConfig.java
-D:\project\springcloud-ljqinit\springcloud-ljqinit\provider\src\main\java\com\ljq\project\model\User.java
-D:\project\springcloud-ljqinit\springcloud-ljqinit\provider\src\main\java\com\ljq\project\ProviderApplication.java
-D:\project\springcloud-ljqinit\springcloud-ljqinit\provider\src\main\java\com\ljq\project\service\UserService.java
-D:\project\springcloud-ljqinit\springcloud-ljqinit\provider\src\main\java\com\ljq\project\mapper\UserMapper.java
+D:\project\java\initproject\springcloud-ljqinit\provider\src\main\java\com\ljq\project\config\MybatisPlusConfig.java
+D:\project\java\initproject\springcloud-ljqinit\provider\src\main\java\com\ljq\project\ProviderApplication.java
+D:\project\java\initproject\springcloud-ljqinit\provider\src\main\java\com\ljq\project\controller\userController.java
+D:\project\java\initproject\springcloud-ljqinit\provider\src\main\java\com\ljq\project\mapper\UserMapper.java
+D:\project\java\initproject\springcloud-ljqinit\provider\src\main\java\com\ljq\project\service\impl\UserServiceImpl.java
+D:\project\java\initproject\springcloud-ljqinit\provider\src\main\java\com\ljq\project\service\UserService.java
+D:\project\java\initproject\springcloud-ljqinit\provider\src\main\java\com\ljq\project\model\User.java
