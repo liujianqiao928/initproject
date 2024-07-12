@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ljq.project.aop.Log;
 import com.ljq.project.dto.response.ResultResponse;
 import com.ljq.project.enums.TipEnum;
-import com.ljq.project.exception.MyException;
 import com.ljq.project.model.User;
 import com.ljq.project.service.UserService;
 import io.swagger.annotations.Api;
@@ -22,14 +21,19 @@ public class UserController {
     private UserService userService;
     @GetMapping("/getUser")
     @Log
-    public ResultResponse<String> getUser() {
+    public ResultResponse getUser() {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.select("*");
 
       String res= JSON.toJSONString(userService.list(queryWrapper));
 
-        return new ResultResponse<>(TipEnum.SUCCESS.getCode(), TipEnum.SUCCESS.getMessage(), res);
+        return ResultResponse.ok(TipEnum.SUCCESS.getCode(), TipEnum.SUCCESS.getMessage(), res);
     }
 
+    @GetMapping("/e")
+    @Log
+    public ResultResponse test() {
 
+        return ResultResponse.ok(TipEnum.SUCCESS.getCode(), TipEnum.SUCCESS.getMessage(), "test");
+    }
 }
